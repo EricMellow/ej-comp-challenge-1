@@ -1,0 +1,83 @@
+/*https://coolors.co/a3e7fc-4cb963-8963ba-4d7ea8-f78154*/
+
+* {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #FFF;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60vw;
+  align-content: stretch;
+}
+
+header {
+  background-color: #0A64B4;
+  width: 40vw;
+  height: 33vh;
+}
+
+aside {
+  width: 39vw;
+  height: 100vh;
+  background-image: url("boat.jpg");
+  background-size: 100% 800px;
+  /*background-color: #000;*/
+}
+
+.profile {
+  background-color: #757575;
+  width: 20vw;
+  height: 33vh;
+}
+
+.experience {
+  background-color: #165B98;
+  width: 20vw;
+  height: 33vh;
+}
+
+.education {
+  background-color: #5198CA;
+  width: 20vw;
+  height: 33vh;
+}
+
+.blog {
+  background-color: #0A64B4;
+  width: 20vw;
+  height: 33vh;
+}
+
+.social {
+  background-color: #CFD8DC;
+  width: 20vw;
+  height: 33vh;
+}
+
+.contact {
+  background-color: #165B98;
+  width: 20vw;
+  height: 33vh;
+}
+
+.portfolio {
+  background-color: #CFD8DC;
+  width: 20vw;
+  height: 33vh;
+}
