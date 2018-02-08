@@ -14,7 +14,8 @@
 body {
   display: flex;
   flex-direction: row;
-  align-content: stretch;
+  align-content: center;
+  overflow: hidden;
 }
 
 section {
@@ -22,33 +23,43 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   width: 60vw;
-  align-content: stretch;
+  height: 100vh;
+  align-content: flex-start;
+  overflow-y: scroll;
 }
 
 header {
   background-color: #0A64B4;
-  width: 40vw;
-  height: 33vh;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+  width: 464px;
+  height: 232px;
+  flex: 2 2 auto;
+  padding: 10px 0px 0px 25px;
 }
 
 aside {
   width: 500px;
+  min-width: 450px;
   height: 100vh;
   background-image: url("boat.jpg");
-  background-size: 100% 800px;
+  background-size: 100% 800px, cover;
 }
 
 h1 {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  margin: 5px;
+  margin-top: 20px;
 }
 
+h2 {
+  clear: both;
+  text-align: center;
+  margin: 20px;
+}
+
+h3, .quote {
+  padding-bottom: 15px;
+}
 button {
   color: #000;
 }
@@ -61,7 +72,7 @@ article {
 }
 
 svg {
-  height: 35%;
+  height: 38%;
 }
 
 img {
@@ -74,8 +85,19 @@ article p {
   font-weight: 600;
 }
 
+ul {
+  display: inline-block;;
+  float: right;
+}
+
+.catch {
+  margin-top: -28px;
+}
+
 .anchor {
-  height: 35%;
+  height: 32%;
+  margin-bottom: 10px;
+  margin-top: 10px
 }
 
 .boat {
@@ -84,10 +106,13 @@ article p {
 
 .fish {
   height: 65%;
+  margin-top: -20px;
 }
 
 .trees {
   height: 30%;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .rope {
@@ -105,42 +130,72 @@ article p {
 
 .profile {
   background-color: #757575;
-  width: 20vw;
-  height: 33vh;
+  width: 232px;
+  height: 232px;
+  flex: 1 1 auto;
+}
+
+.wheel {
+  background-color: #165B98;
+  width: 232px;
+  height: 232px;
+  flex: 1 1 auto;
+  padding-top: 10px;
 }
 
 .experience {
-  background-color: #165B98;
-  width: 20vw;
-  height: 33vh;
+  margin-top: 10px;
 }
 
 .education {
   background-color: #5198CA;
-  width: 20vw;
-  height: 33vh;
+  width: 232px;
+  height: 232px;
+  flex: 1 1 auto;
 }
 
 .blog {
   background-color: #0A64B4;
-  width: 20vw;
-  height: 33vh;
+  width: 232px;
+  height: 232px;
+  flex: 1 1 auto;
 }
 
 .social {
   background-color: #CFD8DC;
-  width: 20vw;
-  height: 33vh;
+  width: 232px;
+  height: 232px;
+  flex: 1 1 auto;
 }
 
 .contact {
-  background-color: #165B98;
-  width: 20vw;
-  height: 33vh;
+  background-color: #446677;
+  width: 232px;
+  height: 232px;
+  flex: 1 1 auto;
 }
 
 .portfolio {
   background-color: #CFD8DC;
-  width: 20vw;
-  height: 33vh;
+  width: 232px;
+  height: 232px;
+  flex: 1 1 auto;
+}
+
+/*First Media Breakpoint*/
+@media screen and (max-width: 922px) {
+
+.profile, .wheel, .education, .blog, .social, .contact,
+.portfolio {
+  height: 100px;
+}
+
+.trees {
+  margin-bottom: 10px;
+}
+
+.catch {
+  margin-top: -15px;
+}
+
 }
