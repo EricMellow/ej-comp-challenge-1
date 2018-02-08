@@ -1,4 +1,3 @@
-/*https://coolors.co/a3e7fc-4cb963-8963ba-4d7ea8-f78154*/
 
 * {
   margin: 0;
@@ -30,14 +29,78 @@ header {
   background-color: #0A64B4;
   width: 40vw;
   height: 33vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 aside {
-  width: 39vw;
+  width: 500px;
   height: 100vh;
   background-image: url("boat.jpg");
   background-size: 100% 800px;
-  /*background-color: #000;*/
+}
+
+h1 {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin: 5px;
+}
+
+button {
+  color: #000;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  height: 35%;
+}
+
+img {
+  display: block;
+}
+
+article p {
+  display: block;
+  color: #000;
+  font-weight: 600;
+}
+
+.anchor {
+  height: 35%;
+}
+
+.boat {
+  height: 45%;
+}
+
+.fish {
+  height: 65%;
+}
+
+.trees {
+  height: 30%;
+}
+
+.rope {
+  height: 45%;
+}
+
+.water {
+  height: 45%;
+}
+
+.sea {
+  font-weight: 300;
+  display: inline-block;
 }
 
 .profile {
