@@ -92,9 +92,9 @@ img {
 
 input {
   display: flex;
-  height: 50px;
+  height: 45px;
   align-self: center;
-  margin-top: 150px;
+  margin: 150px 10px 0px 10px;
 }
 
 .btn-prev {
