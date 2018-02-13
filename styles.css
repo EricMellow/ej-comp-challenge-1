@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
   color: #FFF;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
 }
 
 *,
@@ -10,43 +10,42 @@
   box-sizing: border-box;
 }
 
-body {
+article {
+  align-items: center;
   display: flex;
-  flex-direction: row;
-  align-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-span {
-  margin-left: 10px;
-}
-section {
-  align-content: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 100vh;
-  overflow-y: scroll;
-  width: 60%;
-}
-
-header {
-  background-color: #0A64B4;
-  width: 464px;
-  height: 33.33333%;
-  flex: 2 2 auto;
-  padding: 5px 0px 0px 25px;
-}
-
-p {
-  font-size: 16px;
+article p {
+  color: #000;
+  display: block;
+  font-weight: 600;
 }
 
 aside {
-  width: 40%;
-  min-width: 450px;
-  height: 100vh;
   background-image: url("boat.jpg");
   background-size: 100% 800px;
+  height: 100vh;
+  min-width: 450px;
+  width: 40%;
+}
+
+body {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-size: 16px;
+  height: 50px;
+  margin: 0px 5px 5px 5px;
+  width: 120px;
 }
 
 h1 {
@@ -58,45 +57,75 @@ h1 {
 
 h2 {
   clear: both;
-  text-align: center;
   margin: 40px;
+  text-align: center;
 }
 
 h3, .quote {
   padding-bottom: 15px;
 }
 
-button {
-  color: #FFF;
-  font-size: 16px;
-  border-radius: 0px;
-  border: 2px solid #FFF;
-  background-color: transparent;
-  height: 50px;
-  width: 120px;
-  margin: 0px 5px 5px 5px;
+header {
+  background-color: #0A64B4;
+  flex: 2 2 auto;
+  height: 33.33333%;
+  padding: 5px 0px 0px 25px;
+  width: 464px;
 }
 
-article {
+input {
+  align-self: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-svg {
-  height: 38%;
+  height: 45px;
+  margin: 150px 10px 0px 10px;
 }
 
 img {
   display: block;
 }
 
-input {
+li {
+  display: inline-block;
+  float: right;
+}
+
+p {
+  font-size: 16px;
+}
+
+section {
+  align-content: flex-start;
   display: flex;
-  height: 45px;
-  align-self: center;
-  margin: 150px 10px 0px 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 60%;
+}
+
+span {
+  margin-left: 10px;
+}
+
+svg {
+  height: 38%;
+}
+
+.anchor {
+  height: 32%;
+  margin-bottom: 10px;
+  margin-top: 10px
+}
+
+.blog {
+  background-color: #0A64B4;
+  flex: 1 1 auto;
+  height: 33.33333%;
+  width: 232px;
+}
+
+.boat {
+  height: 45%;
 }
 
 .btn-prev {
@@ -109,15 +138,31 @@ input {
   float: right;
 }
 
-article p {
-  display: block;
-  color: #000;
-  font-weight: 600;
+.catch {
+  margin-top: -28px;
 }
 
-li {
-  display: inline-block;
-  float: right;
+.contact {
+  background-color: #CFD8DC;
+  flex: 1 1 auto;
+  height: 33.33333%;
+  width: 232px;
+}
+
+.experience {
+  margin-top: 10px;
+}
+
+.education {
+  background-color: #5198CA;
+  flex: 1 1 auto;
+  height: 33.33333%;
+  width: 232px;
+}
+
+.fish {
+  height: 65%;
+  margin-top: -20px;
 }
 
 .more {
@@ -133,23 +178,34 @@ li {
   margin: 10px 0px 0px 0px;
 }
 
-.catch {
-  margin-top: -28px;
+.portfolio {
+  background-color: #446677;
+  flex: 1 1 auto;
+  height: 33.33333%;
+  width: 232px;
 }
 
-.anchor {
-  height: 32%;
-  margin-bottom: 10px;
-  margin-top: 10px
+.profile {
+  background-color: #757575;
+  flex: 1 1 auto;
+  height: 33.33333%;
+  width: 232px;
 }
 
-.boat {
+.rope {
   height: 45%;
 }
 
-.fish {
-  height: 65%;
-  margin-top: -20px;
+.sea {
+  display: inline-block;
+  font-weight: 300;
+}
+
+.social {
+  background-color: #757575;
+  flex: 1 1 auto;
+  height: 33.33333%;
+  width: 232px;
 }
 
 .trees {
@@ -158,148 +214,95 @@ li {
   margin-top: 10px;
 }
 
-.rope {
-  height: 45%;
-}
-
 .water {
   height: 45%;
 }
 
-.sea {
-  font-weight: 300;
-  display: inline-block;
-}
-
-.profile {
-  background-color: #757575;
-  width: 232px;
-  height: 33.33333%;
-  flex: 1 1 auto;
-}
-
 .wheel {
   background-color: #165B98;
-  width: 232px;
-  height: 33.33333%;
   flex: 1 1 auto;
+  height: 33.33333%;
   padding-top: 10px;
-}
-
-.experience {
-  margin-top: 10px;
-}
-
-.education {
-  background-color: #5198CA;
   width: 232px;
-  height: 33.33333%;
-  flex: 1 1 auto;
 }
 
-.blog {
-  background-color: #0A64B4;
-  width: 232px;
-  height: 33.33333%;
-  flex: 1 1 auto;
-}
-
-.social {
-  background-color: #757575;
-  width: 232px;
-  height: 33.33333%;
-  flex: 1 1 auto;
-}
-
-.contact {
-  background-color: #CFD8DC;
-  width: 232px;
-  height: 33.33333%;
-  flex: 1 1 auto;
-}
-
-.portfolio {
-  background-color: #446677;
-  width: 232px;
-  height: 33.33333%;
-  flex: 1 1 auto;
-}
 
 /*First Media Breakpoint*/
 @media screen and (max-width: 922px) {
 
-.profile, .wheel, .education, .blog, .social, .contact,
-.portfolio {
-  height: 100px;
+  .catch {
+    margin-top: -15px;
+  }
+
+  .profile, .wheel, .education, .blog, .social, .contact,
+  .portfolio {
+    height: 100px;
+  }
+
+  .trees {
+    margin-bottom: 10px;
+  }
 }
 
-.trees {
-  margin-bottom: 10px;
-}
 
-.catch {
-  margin-top: -15px;
-}
-
-}
-
+/*Second Media Breakpoint*/
 @media screen and (max-width: 880px) {
 
-header {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0px;
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .paragraph {
+    display: none;
+  }
 }
 
-.paragraph {
-  display: none;
-}
 
-}
-/*Second Media Breakpoint*/
+/*Third Media Breakpoint*/
 @media screen and (max-width: 425px) {
 
-body {
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
+  aside {
+    display: none;
+    order: 1;
+  }
 
-section {
-  order: 2;
-  width: 100vw;
-  overflow-y: scroll;
-}
+  body {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 
-aside {
-  order: 1;
-  display: none;
-}
+  header {
+    background-image: url("boat.jpg");
+    background-size: 100% 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
 
-header {
-  background-image: url("boat.jpg");
-  background-size: 100% 800px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0;
-}
+  section {
+    order: 2;
+    overflow-y: scroll;
+    width: 100vw;
+  }
 
-.paragraph {
-  display: none;
-}
+  .catch {
+    margin-top: -15px;
+  }
 
-.profile, .wheel, .education, .blog, .social, .contact,
-.portfolio {
-  height: 100px;
-}
+  .paragraph {
+    display: none;
+  }
 
-.trees {
-  margin-bottom: 10px;
-}
+  .profile, .wheel, .education, .blog, .social, .contact,
+  .portfolio {
+    height: 100px;
+  }
 
-.catch {
-  margin-top: -15px;
-}
-
+  .trees {
+    margin-bottom: 10px;
+  }
 }
