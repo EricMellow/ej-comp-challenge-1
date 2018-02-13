@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -17,20 +16,23 @@ body {
   align-content: center;
 }
 
+span {
+  margin-left: 10px;
+}
 section {
+  align-content: flex-start;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 60vw;
   height: 100vh;
-  align-content: flex-start;
   overflow-y: scroll;
+  width: 60%;
 }
 
 header {
   background-color: #0A64B4;
   width: 464px;
-  height: 232px;
+  height: 33.33333%;
   flex: 2 2 auto;
   padding: 5px 0px 0px 25px;
 }
@@ -40,7 +42,7 @@ p {
 }
 
 aside {
-  width: 500px;
+  width: 40%;
   min-width: 450px;
   height: 100vh;
   background-image: url("boat.jpg");
@@ -57,7 +59,7 @@ h1 {
 h2 {
   clear: both;
   text-align: center;
-  margin: 20px;
+  margin: 40px;
 }
 
 h3, .quote {
@@ -113,9 +115,22 @@ article p {
   font-weight: 600;
 }
 
-ul {
-  display: inline-block;;
+li {
+  display: inline-block;
   float: right;
+}
+
+.more {
+  height: 15px;
+  margin: 10px 10px 0px 0px;
+}
+
+.more3 {
+  margin: 10px 0px 0px 0px;
+}
+
+.more2 {
+  margin: 10px 0px 0px 0px;
 }
 
 .catch {
@@ -159,14 +174,14 @@ ul {
 .profile {
   background-color: #757575;
   width: 232px;
-  height: 232px;
+  height: 33.33333%;
   flex: 1 1 auto;
 }
 
 .wheel {
   background-color: #165B98;
   width: 232px;
-  height: 232px;
+  height: 33.33333%;
   flex: 1 1 auto;
   padding-top: 10px;
 }
@@ -178,35 +193,35 @@ ul {
 .education {
   background-color: #5198CA;
   width: 232px;
-  height: 232px;
+  height: 33.33333%;
   flex: 1 1 auto;
 }
 
 .blog {
   background-color: #0A64B4;
   width: 232px;
-  height: 232px;
+  height: 33.33333%;
   flex: 1 1 auto;
 }
 
 .social {
-  background-color: #CFD8DC;
+  background-color: #757575;
   width: 232px;
-  height: 232px;
+  height: 33.33333%;
   flex: 1 1 auto;
 }
 
 .contact {
-  background-color: #446677;
+  background-color: #CFD8DC;
   width: 232px;
-  height: 232px;
+  height: 33.33333%;
   flex: 1 1 auto;
 }
 
 .portfolio {
-  background-color: #CFD8DC;
+  background-color: #446677;
   width: 232px;
-  height: 232px;
+  height: 33.33333%;
   flex: 1 1 auto;
 }
 
@@ -228,6 +243,20 @@ ul {
 
 }
 
+@media screen and (max-width: 880px) {
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.paragraph {
+  display: none;
+}
+
+}
 /*Second Media Breakpoint*/
 @media screen and (max-width: 425px) {
 
@@ -244,6 +273,19 @@ section {
 
 aside {
   order: 1;
+  display: none;
+}
+
+header {
+  background-image: url("boat.jpg");
+  background-size: 100% 800px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.paragraph {
   display: none;
 }
 
