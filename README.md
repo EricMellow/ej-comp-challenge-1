@@ -8,3 +8,6 @@ Can I make a static comp and still make it fun?! There's only one way to find ou
 
 ### Original Comp:
 ![Static Comp 1](http://frontend.turing.io/assets/images/static-comp-challenge-1.jpg)
+
+### My Version:
+![My Site](https://github.com/EricMellow/ej-comp-challenge-1/blob/master/screen-shot.png)
